@@ -41,4 +41,8 @@
     Private Sub cmd_Click(sender As Object, e As EventArgs) Handles cmd.Click
         Process.Start("cmd", "/K cd " + My.Computer.FileSystem.SpecialDirectories.MyDocuments)
     End Sub
+
+    Private Sub run_Click(sender As Object, e As EventArgs) Handles run.Click
+        Process.Start("run")
+    End Sub
 End Class

@@ -35,6 +35,7 @@ Partial Class comandcentre
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.cmd = New System.Windows.Forms.Button()
+        Me.run = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -112,7 +113,7 @@ Partial Class comandcentre
         Me.TabControl1.Location = New System.Drawing.Point(12, 12)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(196, 134)
+        Me.TabControl1.Size = New System.Drawing.Size(196, 170)
         Me.TabControl1.TabIndex = 7
         '
         'TabPage1
@@ -130,13 +131,14 @@ Partial Class comandcentre
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.run)
         Me.TabPage2.Controls.Add(Me.cmd)
         Me.TabPage2.Controls.Add(Me.ctrlpanel)
         Me.TabPage2.Controls.Add(Me.taskman)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(188, 108)
+        Me.TabPage2.Size = New System.Drawing.Size(188, 144)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Advanced"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -162,11 +164,20 @@ Partial Class comandcentre
         Me.cmd.Text = "Command Prompt"
         Me.cmd.UseVisualStyleBackColor = True
         '
+        'run
+        '
+        Me.run.Location = New System.Drawing.Point(7, 107)
+        Me.run.Name = "run"
+        Me.run.Size = New System.Drawing.Size(173, 27)
+        Me.run.TabIndex = 3
+        Me.run.Text = "Run"
+        Me.run.UseVisualStyleBackColor = True
+        '
         'comandcentre
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(215, 154)
+        Me.ClientSize = New System.Drawing.Size(215, 191)
         Me.ControlBox = False
         Me.Controls.Add(Me.TabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -196,5 +207,6 @@ Partial Class comandcentre
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
     Friend WithEvents cmd As System.Windows.Forms.Button
+    Friend WithEvents run As System.Windows.Forms.Button
 
 End Class
