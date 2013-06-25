@@ -37,4 +37,8 @@
         Me.Location = New Point(leftStart, topStart)
         Me.Show()
     End Sub
+
+    Private Sub cmd_Click(sender As Object, e As EventArgs) Handles cmd.Click
+        Process.Start("cmd", "/K cd " + My.Computer.FileSystem.SpecialDirectories.MyDocuments)
+    End Sub
 End Class

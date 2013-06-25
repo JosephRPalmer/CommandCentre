@@ -34,6 +34,7 @@ Partial Class comandcentre
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.cmd = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -129,12 +130,13 @@ Partial Class comandcentre
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.cmd)
         Me.TabPage2.Controls.Add(Me.ctrlpanel)
         Me.TabPage2.Controls.Add(Me.taskman)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(188, 202)
+        Me.TabPage2.Size = New System.Drawing.Size(188, 108)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Advanced"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -150,6 +152,15 @@ Partial Class comandcentre
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "About"
         Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'cmd
+        '
+        Me.cmd.Location = New System.Drawing.Point(7, 73)
+        Me.cmd.Name = "cmd"
+        Me.cmd.Size = New System.Drawing.Size(175, 27)
+        Me.cmd.TabIndex = 2
+        Me.cmd.Text = "Command Prompt"
+        Me.cmd.UseVisualStyleBackColor = True
         '
         'comandcentre
         '
@@ -184,5 +195,6 @@ Partial Class comandcentre
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
+    Friend WithEvents cmd As System.Windows.Forms.Button
 
 End Class
